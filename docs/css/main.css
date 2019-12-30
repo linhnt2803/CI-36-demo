@@ -1,0 +1,244 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 13px;
+  box-sizing: border-box; /*TODO*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+input {
+  width: 100%;
+  height: 38px;
+  padding: 10px;
+  border: 1px solid #ecedec;
+  border-radius: 5px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 120px;
+  height: 38px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  background: #4482ff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #f2f2f2;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+}
+
+.register-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  background: url('../imgs/register-background.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.form-register {
+  max-width: 500px;
+  background: #ffffff;
+}
+
+.log-in-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  background: url('../imgs/login-background.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.form-log-in {
+  max-width: 500px;
+  background: #ffffff;
+}
+
+.form-header h3 {
+  padding: 70px 50px;
+  font-size: 38px;
+  font-weight: 400;
+  color: #788194;
+  text-align: center;
+}
+
+.form-content {
+  padding: 0px 50px;
+}
+
+.form-content>* {
+  margin-bottom: 10px;
+}
+
+.name-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-wrapper>* {
+  width: calc(50% - 5px);
+}
+
+.form-footer {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-footer>a {
+  margin-right: 10px;
+}
+
+.message-error {
+  color: #ff0000;
+  line-height: 25px;
+}
+
+.message-success {
+  color: #00ff00;
+  line-height: 25px;
+}
+
+/* chat */
+.chat-container {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 38px);
+}
+
+.aside-left {
+  width: 15%;
+}
+
+.aside-right {
+  width: 15%;
+}
+
+.list-conversations {
+  min-height: 15%;
+  max-height: 65%;
+  overflow-y: scroll;
+}
+
+.conversation {
+  padding: 10px;
+}
+
+.conversation:hover {
+  cursor: pointer;
+}
+
+.conversation.current {
+  background: #f2f2f2;
+}
+
+.conversation-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.conversation-members {
+  font-size: 10px;
+  font-style: italic;
+  text-align: right;
+}
+
+.form-add-conversation {
+  padding: 10px;
+}
+
+.form-add-conversation>* {
+  margin-bottom: 10px;
+}
+
+.current-conversation {
+  width: 100%;
+}
+
+.detail-current-conversation{
+  padding: 10px;
+}
+
+.leave-current-conversation{
+  padding: 10px;
+}
+
+.user-email{
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.created-at{
+  font-size: 10px;
+  text-align: right;
+}
+
+.list-messages {
+  padding: 10px;
+  height: calc(100% - 38px);
+  overflow-y: scroll;
+}
+
+.list-messages>* {
+  margin-bottom: 10px;
+}
+
+.message>span {
+  display: inline-block;
+  max-width: 50%;
+  padding: 10px;
+  border: 1px solid #4482ff;
+  border-radius: 5px;
+  color: #4482ff;
+  word-break: break-word;
+}
+
+.your {
+  text-align: right;
+}
+
+.form-add-message {
+  display: flex;
+}
+
+.form-add-message>.input-wrapper {
+  width: 100%; /* calc(100% - 38px) */
+}
+
+/* nav */
+.main-nav {
+  height: 38px;
+  display: flex;
+  justify-content: flex-end;
+  background: #4482ff;
+  color: #ffffff;
+}
+
+.user-profile {
+  padding: 10px;
+}
+
+.user-profile>* {
+  margin-right: 10px;
+}
